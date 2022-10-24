@@ -2,7 +2,8 @@
 movie application
 
 # Architecture MERN
- Version :
+ *Version :
+ 
  nvm : 1.1.7
  node: v14.19.0
  react:^17.0.2
