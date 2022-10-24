@@ -1,5 +1,6 @@
-# movie-app
-movie application
+ # movie-app
+
+    Responsive React Movies App With API
 
 # Architecture MERN
  Version :
@@ -12,11 +13,8 @@ movie application
  
  # Paiement online
  
-   utilisation de stripe
- 
- # react-movie
 
-    Responsive React Movies App With API
+    Utilisation stripe
 
 # Resource
 
