@@ -10,13 +10,6 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post("/create-checkout-session", async (req, res) => {
-    const customer = await stripe.customers.create({
-        metadata: {
-            userId: req.body.userId,
-            cart: JSON.stringify(req.body.cartItems),
-        },
-    });
-
     const line_items = [{
         price_data: {
             currency: "usd",
