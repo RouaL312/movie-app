@@ -8,11 +8,6 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-app.get('/', (req, res) => {
-    console.log("eeee")
-    res.send('Hello World!')
-})
-
 
 app.post("/create-checkout-session", async (req, res) => {
     const customer = await stripe.customers.create({
