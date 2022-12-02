@@ -10,12 +10,19 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.post("/create-checkout-session", async (req, res) => {
+    const customer = await stripe.customers.create({
+        metadata: {
+            userId: 1,
+            cart: {},
+        },
+    });
+
     const line_items = [{
         price_data: {
             currency: "usd",
             product_data: {
                 name: "Monthly Subscription",
-                description: "subscription",
+                description: "TMovies",
             },
             unit_amount: 1000,
         },
@@ -42,5 +49,5 @@ app.post("/create-checkout-session", async (req, res) => {
 });
 
 app.listen(process.env.PORT || 8080, () => {
-    console.log("serveur démarré..");
+    console.log("serveur démarré....");
 });
