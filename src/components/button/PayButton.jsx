@@ -19,7 +19,7 @@ const PayButton = () => {
   return (
     <>
      <li onClick={() => handleCheckout()}>
-    <Link>Check out</Link> 
+    <Link>S'abonner</Link> 
                             </li>
     </>
   );
