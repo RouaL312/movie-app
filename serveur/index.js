@@ -49,5 +49,5 @@ app.post("/create-checkout-session", async (req, res) => {
 });
 
 app.listen(process.env.PORT || 8080, () => {
-    console.log("serveur démarré..");
+    console.log("serveur démarré....");
 });
