@@ -1,8 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 
 import { Link, useLocation } from 'react-router-dom';
-import StripeContainer from '../../api/stripeContainer';
-
+import PayButton from '../button/PayButton';
 import './header.scss';
 
 import logo from '../../assets/tmovie.png';
@@ -66,7 +65,8 @@ const Header = () => {
                             
                         ))
                     }
-                   
+                                   <PayButton></PayButton>
+
                 </ul>
             </div>
         </div>
